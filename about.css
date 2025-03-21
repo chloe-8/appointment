@@ -1,0 +1,345 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+.logo span {
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px; /* Adjust size if needed */
+    font-weight: normal;
+    color: #000000; /* Customize color */
+}
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to left, #FAF8E2, #FFDC9C, #F5CBA7); /* Adding a warmer peach shade */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#ffffff; /* Soft gold-beige gradient */
+    color: rgb(0, 0, 0);
+    padding: 15px 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+
+}
+.nav-center {
+    margin-left: 70%; /* Moves the links to the right */
+}
+
+.navbar .logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../image/hero-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 80px 20px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.hero-text p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+/* Icon Styling */
+.fa {
+    font-size: 22px; /* Default size for all FontAwesome icons */
+    margin-right: 8px;
+    color: #ffffff;
+}
+
+
+/* Mission Section */
+.mission-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 40px; /* Adds uniform space between text and image */
+}
+
+/* Adjust text and image layout */
+.mission-text {
+    flex: 1;
+    padding-right: 40px; /* Ensures text has space before the image */
+}
+
+.mission-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.mission-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Mission Title with Icon */
+.mission {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and title */
+}
+
+.mission img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Service Section */
+.service-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 40px; /* Adds uniform space between text and image */
+}
+/* Services Text */
+.service-text ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+}
+/* Adjust text and image layout */
+.service-text {
+    flex: 1;
+    padding-right: 40px; /* Ensure text has space before the image */
+}
+.service-text ul li {
+    gap: 6px; /* Space between icon and text */
+}
+
+.service-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.service-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Service Icons */
+.service-title {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between icon and title */
+}
+
+.service-title img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Why Choose Us Section */
+.why {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 40px; /* Space between text and image */
+}
+
+/* Why Text */
+.why-text {
+    flex: 1;
+    padding-right: 40px; /* Adds space between text and image */
+    text-align: left; /* Ensures text is aligned to the left */
+}
+
+/* Why Image */
+.why-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.why-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.why-text ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 3px; /* Space between icon and text */
+    text-align: left;
+    flex-wrap: wrap; /* Allows text to wrap naturally if needed */
+}
+
+.why-text ul li i {
+    flex-shrink: 0; /* Prevents icon from resizing */
+    color: #28a745;
+    font-size: 18px;
+}
+
+.why-text ul li b {
+    white-space: nowrap; /* Keeps only <b> on one line */
+}
+
+/* Ensure the image stays responsive */
+.why-image img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Why Title with Icon */
+.why-title {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and title */
+}
+
+.why-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* Bullet List Styling */
+.why-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.why-text ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    text-align: left; /* Ensures text is properly aligned */
+    line-height: 1.5; /* Improves readability */
+}
+
+.why-text ul li i {
+    margin-right: 10px;
+    color: #28a745; /* Green checkmark */
+    font-size: 18px;
+}
+/* Footer Styling */
+.footer {
+    background: transparent;
+    color: white;
+    padding: 40px 10%;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.footer-section .social-icons a:hover {
+    color: #f39c12;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ffffff33;
+}
